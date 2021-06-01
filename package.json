@@ -1,6 +1,6 @@
 {
-  "name": "react-material-dashboard",
-  "author": "DeviasIO",
+  "name": "dashboard-vlood-",
+  "author": "BXP_TECH",
   "licence": "MIT",
   "version": "1.0.0",
   "private": false,
@@ -42,6 +42,7 @@
     "nprogress": "^0.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-calendar": "^3.4.0",
     "react-chartjs-2": "^2.10.0",
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.8",
@@ -55,5 +56,16 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.1"
-  }
+  },
+  "description": "![license](https://img.shields.io/badge/license-MIT-blue.svg)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bxp-tech/Dashboard-Vlood-.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bxp-tech/Dashboard-Vlood-/issues"
+  },
+  "homepage": "https://github.com/bxp-tech/Dashboard-Vlood-#readme"
 }

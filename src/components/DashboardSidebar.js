@@ -15,6 +15,7 @@ import {
   AlertCircle as AlertCircleIcon,
   BarChart as BarChartIcon,
   Lock as LockIcon,
+  PlusSquare,
   Settings as SettingsIcon,
   ShoppingBag as ShoppingBagIcon,
   User as UserIcon,
@@ -34,6 +35,11 @@ const items = [
     href: '/app/dashboard',
     icon: BarChartIcon,
     title: 'Dashboard'
+  },
+  {
+    href: '/app/solicitudes',
+    icon: PlusSquare,
+    title: 'Solicitudes'
   },
   {
     href: '/app/customers',

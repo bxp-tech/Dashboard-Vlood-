@@ -6,11 +6,11 @@ import {
   Grid,
   Typography
 } from '@material-ui/core';
-import { green } from '@material-ui/core/colors';
+import { green, red } from '@material-ui/core/colors';
+import { Favorite } from '@material-ui/icons';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
-const TotalCustomers = (props) => (
+const UnidadesDeSangre = (props) => (
   <Card {...props}>
     <CardContent>
       <Grid
@@ -24,24 +24,24 @@ const TotalCustomers = (props) => (
             gutterBottom
             variant="h6"
           >
-            TOTAL CUSTOMERS
+            Unidades de sangre donadas
           </Typography>
           <Typography
             color="textPrimary"
             variant="h3"
           >
-            1,600
+            200
           </Typography>
         </Grid>
         <Grid item>
           <Avatar
             sx={{
-              backgroundColor: green[600],
+              backgroundColor: red[600],
               height: 56,
               width: 56
             }}
           >
-            <PeopleIcon />
+            <Favorite />
           </Avatar>
         </Grid>
       </Grid>
@@ -66,11 +66,11 @@ const TotalCustomers = (props) => (
           color="textSecondary"
           variant="caption"
         >
-          Since last month
+          Comparación al último mes
         </Typography>
       </Box>
     </CardContent>
   </Card>
 );
 
-export default TotalCustomers;
+export default UnidadesDeSangre;

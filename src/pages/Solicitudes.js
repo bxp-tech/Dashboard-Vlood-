@@ -4,7 +4,7 @@ import {
   Container,
   Grid
 } from '@material-ui/core';
-import Beneficiados from 'src/components/dashboard//Beneficiados';
+import Beneficiados from 'src/components/dashboard/Beneficiados';
 import LatestOrders from 'src/components/dashboard//LatestOrders';
 import LatestProducts from 'src/components/dashboard//LatestProducts';
 import Sales from 'src/components/dashboard//Sales';
@@ -13,7 +13,7 @@ import UnidadesDeSangre from 'src/components/dashboard/UnidadesDeSangre';
 import Donaciones from 'src/components/dashboard/Donaciones';
 import Calendario from 'src/components/dashboard/Calendario';
 
-const Dashboard = () => (
+const Solicitudes = () => (
   <>
     <Helmet>
       <title>Dashboard | Vlood+</title>
@@ -70,7 +70,7 @@ const Dashboard = () => (
             item
             lg={8}
             md={12}
-            xl={7}
+            xl={9}
             xs={12}
           >
             <Sales />
@@ -79,7 +79,7 @@ const Dashboard = () => (
             item
             lg={4}
             md={6}
-            xl={5}
+            xl={3}
             xs={12}
           >
             <Calendario sx={{ height: '100%' }} />
@@ -108,4 +108,4 @@ const Dashboard = () => (
   </>
 );
 
-export default Dashboard;
+export default Solicitudes;

@@ -1,4 +1,4 @@
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import {
   Box,
   Button,
@@ -19,16 +19,20 @@ const Sales = (props) => {
     datasets: [
       {
         backgroundColor: colors.indigo[500],
-        data: [18, 5, 19, 27, 29, 19, 20],
-        label: 'This year'
+        borderColor: colors.indigo[500],
+        data: [11, 20, 12, 29, 30, 18, 5, 19, 27, 29, 19, 20],
+        label: 'Año actual',
+        fill: false
       },
       {
         backgroundColor: colors.grey[200],
-        data: [11, 20, 12, 29, 30, 25, 13],
-        label: 'Last year'
+        borderColor: colors.grey[200],
+        data: [11, 20, 12, 29, 30, 25, 13, 11, 20, 12, 29, 30],
+        label: 'Año pasado',
+        fill: false
       }
     ],
-    labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug']
+    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
   };
 
   const options = {
@@ -38,6 +42,11 @@ const Sales = (props) => {
     legend: { display: false },
     maintainAspectRatio: false,
     responsive: true,
+    elements: {
+      line: {
+        tension: 0
+      }
+    },
     scales: {
       xAxes: [
         {
@@ -98,7 +107,7 @@ const Sales = (props) => {
             Last 7 days
           </Button>
         )}
-        title="Latest Sales"
+        title="Donaciones este mes"
       />
       <Divider />
       <CardContent>
@@ -108,7 +117,7 @@ const Sales = (props) => {
             position: 'relative'
           }}
         >
-          <Bar
+          <Line
             data={data}
             options={options}
           />
